@@ -1,0 +1,134 @@
+/* ===== Variáveis de cor ===== */
+:root {
+  --azul: #2c3e50;
+  --laranja: #d98236;
+  --fundo: #eef4f4;
+}
+
+/* ===== Regras gerais ===== */
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--fundo);
+}
+
+/* ===== Cabeçalho e rodapé ===== */
+header, footer {
+  background-color: var(--azul);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: var(--laranja);
+}
+
+/* ===== Menu (Flexbox) ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== Conteúdo ===== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  color: var(--azul);
+  border-bottom: 2px solid var(--laranja);
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+/* ===== Formulário e busca ===== */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--laranja);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+#mensagem {
+  font-weight: bold;
+}
+
+/* ===== Grade de livros (Grid) ===== */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+article {
+  background-color: var(--fundo);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+article h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+article p {
+  margin: 0;
+  font-size: 14px;
+  color: #555555;
+}
+
+/* ===== Responsividade (celular) ===== */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Virtual</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <header id="topo">
+    <h1>Biblioteca Virtual</h1>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sugestoes">Sugestões</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+      <input type="search" id="busca" placeholder="Pesquisar livro pelo título...">
+
+      <div class="grade">
+        <article>
+          <h3>Memórias Póstumas de Brás Cubas</h3>
+          <p>Machado de Assis</p>
+        </article>
+        <article>
+          <h3>Capitães da Areia</h3>
+          <p>Jorge Amado</p>
+        </article>
+        <article>
+          <h3>O Pequeno Príncipe</h3>
+          <p>Antoine de Saint-Exupéry</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sugestoes">
+      <h2>Sugestões</h2>
+      <form id="formulario" action="#" method="post">
+        <label for="nome">Nome do Leitor</label>
+        <input type="text" id="nome" name="nome">
+
+        <label for="titulo">Título do Livro</label>
+        <input type="text" id="titulo" name="titulo">
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="mensagem"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Biblioteca Virtual</p>
+    <a href="#topo">Voltar ao topo</a>
+  </footer>
+
+</body>
+</html>
