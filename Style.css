@@ -1,11 +1,10 @@
-/* ===== Variáveis de cor ===== */
+
 :root {
   --azul: #2c3e50;
   --laranja: #d98236;
   --fundo: #eef4f4;
 }
 
-/* ===== Regras gerais ===== */
 * {
   box-sizing: border-box;
 }
@@ -20,7 +19,7 @@ body {
   background-color: var(--fundo);
 }
 
-/* ===== Cabeçalho e rodapé ===== */
+
 header, footer {
   background-color: var(--azul);
   color: white;
@@ -32,7 +31,6 @@ footer a {
   color: var(--laranja);
 }
 
-/* ===== Menu (Flexbox) ===== */
 nav {
   display: flex;
   justify-content: center;
@@ -45,7 +43,7 @@ nav a {
   font-weight: bold;
 }
 
-/* ===== Conteúdo ===== */
+
 main {
   max-width: 900px;
   margin: 0 auto;
@@ -66,7 +64,6 @@ h2 {
   margin-top: 0;
 }
 
-/* ===== Formulário e busca ===== */
 label {
   display: block;
   margin-bottom: 5px;
@@ -92,7 +89,6 @@ button {
   font-weight: bold;
 }
 
-/* ===== Grade de livros (Grid) ===== */
 .grade {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -107,7 +103,7 @@ article {
 }
 
 article h3 {
-  margin: 0 0 8px 0;
+  margin: 0;
   font-size: 16px;
 }
 
@@ -117,7 +113,6 @@ article p {
   color: #555555;
 }
 
-/* ===== Responsividade (celular) ===== */
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
