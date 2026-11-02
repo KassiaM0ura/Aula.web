@@ -1,4 +1,3 @@
-
 const busca = document.getElementById("busca");
 const livros = document.querySelectorAll("article");
 
@@ -15,8 +14,6 @@ busca.addEventListener("input", function () {
     }
   });
 });
-
-
 const formulario = document.getElementById("formulario");
 const campoNome = document.getElementById("nome");
 const campoTitulo = document.getElementById("titulo");
